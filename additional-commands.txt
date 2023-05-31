@@ -1,0 +1,8 @@
+# Make sure you have sudo access then
+sudo crontab -u YOUR_USER_NAME -e
+
+# In the page that opens, assuming that your code is stored in your home directory, paste in the code below and save with :wq
+*/1    *    *    *    *    sh /home/YOUR_USER_NAME/awsTomcatHttp.sh 
+
+# In order to know if your code was picked up by the cron job, type
+sudo tail -100 /var/log/cron
