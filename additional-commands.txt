@@ -6,3 +6,6 @@ sudo crontab -u YOUR_USER_NAME -e
 
 # In order to know if your code was picked up by the cron job, type
 sudo tail -100 /var/log/cron
+
+# Sample Output of the previous command
+May 30 16:00:01 INSTANCE-NAME CROND[20158]: (USERNAME) CMD (sh /home/USERNAME/awsTomcatHttp.sh )
